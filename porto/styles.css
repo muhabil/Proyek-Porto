@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #1f1f22;
+}
+
+footer {
+    background-color: #858e87;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+body {
+    background-color: #B7D3A2;
+}
+.content {
+    background-color: #B7D3A2;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.navbar {
+    background-color: #B7D3A2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hero {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#beranda {
+    background-color: #858e87;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#beranda p {
+    margin: 10px 0;
+}
+
+#portofolio {
+    background-color: #a8b6b0;
+    padding: 20px;
+    height: auto;
+    padding: 50px 0;
+}
+
+#portofolio ul, #portofolio p, #portofolio h1 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+span {
+    color: #B7D3A2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.teks {
+    max-width: 60%;
+}
+
+.image-corner {
+    max-width: 20%;
+    margin-right: 2%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #B7D3A2;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#kontak {
+    background-color: #858e87;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#kontak h1 {
+    color: #1f1f22;
+    margin-bottom: 30px;
+}
+
+#kontak form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #a8b6b0;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+#kontak label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #413e3c;
+}
+
+#kontak input[type="text"],
+#kontak input[type="email"],
+#kontak select,
+#kontak textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #686d6d;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transition: border-color 0.3s;
+}
+
+#kontak input:focus,
+#kontak select:focus,
+#kontak textarea:focus {
+    border-color: #B7D3A2;
+    outline: none;
+}
+
+#kontak textarea {
+    resize: vertical; 
+}
+
+#kontak button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #B7D3A2; 
+    color: #1f1f22;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#kontak button[type="submit"]:hover {
+    background-color: #858e87;
+    color: #a8b6b0;
+}
+
+.proyek {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.proyek h1 {
+    margin-bottom: 25px;
+}
+
+.proyek table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.proyek th {
+    background-color: #413e3c;
+    color: #a8b6b0;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.proyek td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+    font-size: 14px;
+    color: #1f1f22;
+}
+
+.proyek tr:hover {
+    background-color: #f0f0f0;
+}
+
+.proyek tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.proyek td:last-child {
+    font-weight: bold;
+    text-align: center;
+}
+
+.proyek tr td:last-child:contains("Selesai") {
+    color: #4CAF50;
+}
+
+.proyek tr td:last-child:contains("Belum Selesai") {
+    color: #B7D3A2;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    #beranda {
+        justify-content: flex-start; 
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 15px;
+    }
+
+    .teks {
+        max-width: 100%;
+        order: 2;
+    }
+
+    .image-corner {
+        max-width: 40%;
+        margin: 20px auto;
+        order: 1;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        margin-top: 10px;
+        padding-left: 0;
+    }
+    
+    .navbar li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    #beranda {
+        padding: 30px 10px;
+    }
+
+    .image-corner {
+        max-width: 60%;
+    }
+    
+    #portofolio ul, 
+    #portofolio p, 
+    #portofolio h1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #kontak form {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .proyek thead, 
+    .proyek th {
+        display: none; 
+    }
+
+    .proyek table,
+    .proyek tbody,
+    .proyek tr {
+        display: block;
+        width: 100%;
+    }
+    
+    .proyek tr {
+        margin-bottom: 15px;
+        border: 1px solid #d4d4d4;
+        border-radius: 5px;
+        box-shadow: none;
+    }
+
+    .proyek td {
+        display: block;
+        text-align: right;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    .proyek td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        color: #686d6d;
+        width: 45%;
+        text-align: left;
+    }
+    
+    .proyek tr:last-child td:last-child {
+        border-bottom: none;
+    }
+}
